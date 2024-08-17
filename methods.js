@@ -10,4 +10,5 @@ console.log(third);
 
 // console.log(first, second);
 
-writeFileSync("./content/subfolder/result.txt", "Here is the result");
+writeFileSync("./content/subfolder/result.txt", "Here is the result "); //value overridden in an existing file!
+writeFileSync("./content/subfolder/result.txt", "Here is the result ", {flag:'a'}); //appends val
